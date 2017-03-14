@@ -43,11 +43,6 @@ function erasmus_30_year_anniversary_story_block_view($delta = '') {
  * Retrieve the monthly stories block for month specified in url.
  */
 function _erasmus_30_year_anniversary_story_get_monthly_theme() {
-  $url = request_uri();
-  if (strpos($url, 'stories') === FALSE) {
-    return NULL;
-  }
-
   $current_theme_month = variable_get('erasmus_30ya_core_current_theme', NULL);
 
   if ($current_theme_month) {
